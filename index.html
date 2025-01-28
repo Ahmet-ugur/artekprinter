@@ -1,158 +1,254 @@
 <!DOCTYPE html>
 <html lang="tr">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Artek Printer| İnovasyonun Geleceği</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
-</head>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="website icon" type="png" href="images/logo artek.jpg" />
 
-<body>
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
     <!-- Header ve Navbar -->
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Anasayfa</a></li>
-                <li class="dropdown">
-                    <a href="#hizmetler">Hizmetlerimiz</a>
-                    <div class="dropdown-content">
-                        <a href="arac.html" onclick="showHizmet('Araç Parçaları')">Araç Parçaları</a>
-                        <a href="arac.html" onclick="showHizmet('Ev Dekarasyonu')">Ev Dekarasyonu</a>
-                        <a href="arac.html" onclick="showHizmet('Figuran Baskıları')">Figuran Baskıları</a>
-                        <a href="takimbaskiları.html" onclick="showHizmet('Takım Baskıları')">Takım Baskıları</a>
-                        <a href="arac.html" onclick="showHizmet('Film Karakterleri')">Film Karakterleri</a>
-                        <a href="arac.html" onclick="showHizmet('Kişiye Özel Baskı')">Kişiye Özel Baskı</a>
-                        <a href="arac.html" onclick="showHizmet('3D Tarayıcı Baskıları')">3D Tarayıcı Baskıları</a>
-                    </div>
-                </li>
-                <li><a href="kampanya.html">Kampanyalar</a></li>
-                <li><a href="hakkımızda.html">Hakkımızda</a></li>
-                <li><a href="hesabım.html">Hesabım</a></li>
-                <li><a href="sepetim.html" id="sepetLink">Sepetim (0)</a></li>
-                <li><a href="sıkcasorulan.html">SSS</a></li>
-            </ul>
-        </nav>
+      <nav>
+        <ul>
+          <li><a href="index.html">Anasayfa</a></li>
+          <li class="dropdown">
+            <a href="#hizmetler">Hizmetlerimiz</a>
+            <div class="dropdown-content">
+              <a href="arac.html" onclick="showHizmet('Araç Parçaları')"
+                >Araç Parçaları</a
+              >
+              <a href="arac.html" onclick="showHizmet('Ev Dekarasyonu')"
+                >Ev Dekarasyonu</a
+              >
+              <a href="arac.html" onclick="showHizmet('Figuran Baskıları')"
+                >Figuran Baskıları</a
+              >
+              <a
+                href="takimbaskiları.html"
+                onclick="showHizmet('Takım Baskıları')"
+                >Takım Baskıları</a
+              >
+              <a href="arac.html" onclick="showHizmet('Film Karakterleri')"
+                >Film Karakterleri</a
+              >
+              <a href="arac.html" onclick="showHizmet('Kişiye Özel Baskı')"
+                >Kişiye Özel Baskı</a
+              >
+              <a href="arac.html" onclick="showHizmet('3D Tarayıcı Baskıları')"
+                >3D Tarayıcı Baskıları</a
+              >
+            </div>
+          </li>
+          <li><a href="kampanya.html">Kampanyalar</a></li>
+          <li><a href="hakkımızda.html">Hakkımızda</a></li>
+          <li><a href="hesabım.html">Hesabım</a></li>
+          <li><a href="sepetim.html" id="sepetLink">Sepetim (0)</a></li>
+          <li><a href="sıkcasorulan.html">SSS</a></li>
+        </ul>
+      </nav>
     </header>
 
     <!-- Slider -->
     <section id="slider">
-        <div class="slider-container">
-            <div class="slider-item">
-                <img src="images/ev.webp" alt="Slider Görseli 1">
-                <div class="slider-content">
-                    <h2>Hayalinizdeki Ürünleri Gerçekleştiriyoruz</h2>
-                    <p>Artek 3D baskı ile hayalleriniz gerçeğe dönüşsün. Her türlü tasarım ve baskı ihtiyacınızı karşılıyoruz.</p>
-                    <button class="cta-btn" onclick="window.location.href='#hizmetler'">Hizmetlerimizi İnceleyin</button>
-                </div>
-            </div>
-            <div class="slider-item">
-                <img src="images/cfde83c3-8573-4008-a9a5-7ab31010d5ad.webp" alt="Slider Görseli 2">
-                <div class="slider-content">
-                    <h2>Özel Baskı Hizmetleri Sunuyoruz</h2>
-                    <p>Farklı ve yaratıcı çözümler için Artek 3D baskı hizmetlerinden faydalanın. Hayal ettiğiniz her şey burada!</p>
-                    <button class="cta-btn" onclick="window.location.href='#hizmetler'">Şimdi İnceleyin</button>
-                </div>
-            </div>
-            <div class="slider-item">
-                <img src="images/50B14A17-C720-4160-8CC2-AC20FB75F3A8.WEBP" alt="Slider Görseli 2">
-                <div class="slider-content">
-                    <h2>Özel Baskı Hizmetleri Sunuyoruz</h2>
-                    <p>Farklı ve yaratıcı çözümler için Artek 3D baskı hizmetlerinden faydalanın. Hayal ettiğiniz her şey burada!</p>
-                    <button class="cta-btn" onclick="window.location.href='#hizmetler'">Şimdi İnceleyin</button>
-                </div>
-            </div>
-            <div class="slider-item">
-                <img src="images/D8EC7D8D-EE1D-4C2B-A1FA-213BCEB80338.WEBP" alt="Slider Görseli 2">
-                <div class="slider-content">
-                    <h2>3D Tarayıcı İle İstediğiniz Baskı Hizmetleri Sunuyoruz</h2>
-                    <p>Farklı ve yaratıcı çözümler için Artek 3D baskı hizmetlerinden faydalanın. Hayal ettiğiniz her şey burada!</p>
-                    <button class="cta-btn" onclick="window.location.href='#hizmetler'">Şimdi İnceleyin</button>
-                </div>
-            </div>
+      <div class="slider-container">
+        <div class="slider-item">
+          <img src="images/ev.webp" alt="Slider Görseli 1" />
+          <div class="slider-content">
+            <h2>Hayalinizdeki Ürünleri Gerçekleştiriyoruz</h2>
+            <p>
+              Artek 3D baskı ile hayalleriniz gerçeğe dönüşsün. Her türlü
+              tasarım ve baskı ihtiyacınızı karşılıyoruz.
+            </p>
+            <button class="cta-btn" onclick="window.location.href='#hizmetler'">
+              Hizmetlerimizi İnceleyin
+            </button>
+          </div>
         </div>
+        <div class="slider-item">
+          <img
+            src="images/cfde83c3-8573-4008-a9a5-7ab31010d5ad.webp"
+            alt="Slider Görseli 2"
+          />
+          <div class="slider-content">
+            <h2>Özel Baskı Hizmetleri Sunuyoruz</h2>
+            <p>
+              Farklı ve yaratıcı çözümler için Artek 3D baskı hizmetlerinden
+              faydalanın. Hayal ettiğiniz her şey burada!
+            </p>
+            <button class="cta-btn" onclick="window.location.href='#hizmetler'">
+              Şimdi İnceleyin
+            </button>
+          </div>
+        </div>
+        <div class="slider-item">
+          <img
+            src="images/50B14A17-C720-4160-8CC2-AC20FB75F3A8.WEBP"
+            alt="Slider Görseli 2"
+          />
+          <div class="slider-content">
+            <h2>Özel Baskı Hizmetleri Sunuyoruz</h2>
+            <p>
+              Farklı ve yaratıcı çözümler için Artek 3D baskı hizmetlerinden
+              faydalanın. Hayal ettiğiniz her şey burada!
+            </p>
+            <button class="cta-btn" onclick="window.location.href='#hizmetler'">
+              Şimdi İnceleyin
+            </button>
+          </div>
+        </div>
+        <div class="slider-item">
+          <img
+            src="images/D8EC7D8D-EE1D-4C2B-A1FA-213BCEB80338.WEBP"
+            alt="Slider Görseli 2"
+          />
+          <div class="slider-content">
+            <h2>3D Tarayıcı İle İstediğiniz Baskı Hizmetleri Sunuyoruz</h2>
+            <p>
+              Farklı ve yaratıcı çözümler için Artek 3D baskı hizmetlerinden
+              faydalanın. Hayal ettiğiniz her şey burada!
+            </p>
+            <button class="cta-btn" onclick="window.location.href='#hizmetler'">
+              Şimdi İnceleyin
+            </button>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Hizmetlerimiz -->
     <section id="hizmetler">
-        <h2>Hizmetlerimiz</h2>
-        <div class="hizmetler-slider">
-            <div class="hizmet-item" id="araç">
-                <img src="images/cfde83c3-8573-4008-a9a5-7ab31010d5ad.webp" alt="Figüran Baskıları">
-                <h3>Araç Parçaları</h3>
-                <button onclick="openHizmetDetails('Figüran Baskıları')">İncele</button>
-            </div>
-            <div class="hizmet-item" id="ev">
-                <img src="images/ev.webp" alt="Oyuncak Baskıları">
-                <h3>Ev Dekarasyonu</h3>
-                <button onclick="openHizmetDetails('Oyuncak Baskıları')">İncele</button>
-            </div>
-            <div class="hizmet-item" id="figuran">
-                <img src="images/as.png" style="max-height: 400px;" alt="Film Karakteri Baskıları">
-                <h3>Figuran Baskıları</h3>
-                <button onclick="openHizmetDetails('Film Karakteri Baskıları')">İncele</button>
-            </div>
-            <div class="hizmet-item" id="takım">
-                <img src="images/686dd7ac-0f59-4327-af6d-e0279beb4606.webp" alt="Film Aletleri Baskıları">
-                <h3>Takım Baskıları</h3>
-                <a href="takimbaskiları.html"><button >İncele</button></a>
-            </div>
-            <div class="hizmet-item" id="film">
-                <img src="images/F56B2CFC-E458-431C-8F2F-AE7C6BBB8858.WEBP" alt="Hobiler">
-                <h3>Film Karakterleri</h3>
-                <button onclick="openHizmetDetails('Hobiler')">İncele</button>
-            </div>
-            <div class="hizmet-item" id="kişiyeözel">
-                <img src="images/9x16_Hayal_G_c_n_z_3D_ile_Bulu_uyor_H (4).png" style="max-height: 400px;" alt="Kişiye Özel Baskı">
-                <h3>Kişiye Özel Baskı</h3>
-                <button onclick="openHizmetDetails('Kişiye Özel Baskı')">İncele</button>
-            </div>
-            <div class="hizmet-item" id="tarayıcı">
-                <img src="images/D8EC7D8D-EE1D-4C2B-A1FA-213BCEB80338.WEBP" alt="3D Tarayıcı Baskıları">
-                <h3>3D Tarayıcı Baskıları</h3>
-                <button onclick="openHizmetDetails('3D Tarayıcı Baskıları')">İncele</button>
-            </div>
+      <h2>Hizmetlerimiz</h2>
+      <div class="hizmetler-slider">
+        <div class="hizmet-item" id="araç">
+          <img
+            src="images/cfde83c3-8573-4008-a9a5-7ab31010d5ad.webp"
+            alt="Figüran Baskıları"
+          />
+          <h3>Araç Parçaları</h3>
+          <button onclick="openHizmetDetails('Figüran Baskıları')">
+            İncele
+          </button>
         </div>
+        <div class="hizmet-item" id="ev">
+          <img src="images/ev.webp" alt="Oyuncak Baskıları" />
+          <h3>Ev Dekarasyonu</h3>
+          <button onclick="openHizmetDetails('Oyuncak Baskıları')">
+            İncele
+          </button>
+        </div>
+        <div class="hizmet-item" id="figuran">
+          <img
+            src="images/as.png"
+            style="max-height: 400px"
+            alt="Film Karakteri Baskıları"
+          />
+          <h3>Figuran Baskıları</h3>
+          <button onclick="openHizmetDetails('Film Karakteri Baskıları')">
+            İncele
+          </button>
+        </div>
+        <div class="hizmet-item" id="takım">
+          <img
+            src="images/686dd7ac-0f59-4327-af6d-e0279beb4606.webp"
+            alt="Film Aletleri Baskıları"
+          />
+          <h3>Takım Baskıları</h3>
+          <a href="takimbaskiları.html"><button>İncele</button></a>
+        </div>
+        <div class="hizmet-item" id="film">
+          <img
+            src="images/F56B2CFC-E458-431C-8F2F-AE7C6BBB8858.WEBP"
+            alt="Hobiler"
+          />
+          <h3>Film Karakterleri</h3>
+          <button onclick="openHizmetDetails('Hobiler')">İncele</button>
+        </div>
+        <div class="hizmet-item" id="kişiyeözel">
+          <img
+            src="images/9x16_Hayal_G_c_n_z_3D_ile_Bulu_uyor_H (4).png"
+            style="max-height: 400px"
+            alt="Kişiye Özel Baskı"
+          />
+          <h3>Kişiye Özel Baskı</h3>
+          <button onclick="openHizmetDetails('Kişiye Özel Baskı')">
+            İncele
+          </button>
+        </div>
+        <div class="hizmet-item" id="tarayıcı">
+          <img
+            src="images/D8EC7D8D-EE1D-4C2B-A1FA-213BCEB80338.WEBP"
+            alt="3D Tarayıcı Baskıları"
+          />
+          <h3>3D Tarayıcı Baskıları</h3>
+          <button onclick="openHizmetDetails('3D Tarayıcı Baskıları')">
+            İncele
+          </button>
+        </div>
+      </div>
     </section>
 
     <!-- Hakkımızda -->
     <section id="hakkimizda">
-        <h2>Hakkımızda</h2>
-        <div class="hakkimizda-container">
-            <p>Artek 3D Baskı, 3D baskı teknolojilerini kullanarak yaratıcı ve inovatif projeler geliştiren bir firmadır. 
-            Amacımız, her türlü baskı ihtiyacını kaliteli, hızlı ve etkili bir şekilde karşılayarak, müşterilerimize mükemmel 
-            sonuçlar sunmaktır. Yüksek kaliteli baskı malzemeleri ve deneyimli ekiplerimiz ile her projede başarımızı kanıtlıyoruz. 
-            Farklı endüstrilerdeki talepleri karşılayacak çözümler üretmekteyiz.</p>
-            <img src="https://via.placeholder.com/1200x600?text=Hakkımızda+Görseli" alt="Hakkımızda Görseli">
-        </div>
+      <h2>Hakkımızda</h2>
+      <div class="hakkimizda-container">
+        <p>
+          Artek 3D Baskı, 3D baskı teknolojilerini kullanarak yaratıcı ve
+          inovatif projeler geliştiren bir firmadır. Amacımız, her türlü baskı
+          ihtiyacını kaliteli, hızlı ve etkili bir şekilde karşılayarak,
+          müşterilerimize mükemmel sonuçlar sunmaktır. Yüksek kaliteli baskı
+          malzemeleri ve deneyimli ekiplerimiz ile her projede başarımızı
+          kanıtlıyoruz. Farklı endüstrilerdeki talepleri karşılayacak çözümler
+          üretmekteyiz.
+        </p>
+        <img
+          src="https://via.placeholder.com/1200x600?text=Hakkımızda+Görseli"
+          alt="Hakkımızda Görseli"
+        />
+      </div>
     </section>
 
     <!-- SSS Bölümü -->
     <section id="sss">
-        <h2>Sıkça Sorulan Sorular</h2>
-        <div class="sss-item">
-            <button class="sss-toggle">3D Baskı Nedir?</button>
-            <div class="sss-answer">
-                <p>3D baskı, dijital bir modelin fiziksel bir nesneye dönüştürülmesi işlemidir. Bu teknoloji, bir nesnenin katman katman basılmasını sağlar ve sonrasında gerçeğe dönüşür.</p>
-            </div>
-        </div>
-        <div class="sss-item">
-            <button class="sss-toggle">Nasıl Sipariş Verebilirim?</button>
-            <div class="sss-answer">
-                <p>Web sitemiz üzerinden dilediğiniz ürünleri seçip sepete ekleyerek sipariş verebilirsiniz. Ayrıca, özel talepler için bizimle iletişime geçebilirsiniz.</p>
-            </div>
-        </div>
-        </section>
-<footer >
-        <div class="container mx-auto text-center">
-          <p class="text-sm">&copy; 2025 Artek Printer. Tüm hakları saklıdır.</p>
-          <p class="text-xs mt-2">
-            <a href="/privacy" class="text-gray-400 hover:text-white">Gizlilik Politikası</a> |
-            <a href="/terms" class="text-gray-400 hover:text-white">Kullanım Şartları</a>
+      <h2>Sıkça Sorulan Sorular</h2>
+      <div class="sss-item">
+        <button class="sss-toggle">3D Baskı Nedir?</button>
+        <div class="sss-answer">
+          <p>
+            3D baskı, dijital bir modelin fiziksel bir nesneye dönüştürülmesi
+            işlemidir. Bu teknoloji, bir nesnenin katman katman basılmasını
+            sağlar ve sonrasında gerçeğe dönüşür.
           </p>
         </div>
-      </footer>
-    </body>
-      </html>
-      
+      </div>
+      <div class="sss-item">
+        <button class="sss-toggle">Nasıl Sipariş Verebilirim?</button>
+        <div class="sss-answer">
+          <p>
+            Web sitemiz üzerinden dilediğiniz ürünleri seçip sepete ekleyerek
+            sipariş verebilirsiniz. Ayrıca, özel talepler için bizimle iletişime
+            geçebilirsiniz.
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container mx-auto text-center">
+        <p class="text-sm">&copy; 2025 Artek Printer. Tüm hakları saklıdır.</p>
+        <p class="text-xs mt-2">
+          <a href="/privacy" class="text-gray-400 hover:text-white"
+            >Gizlilik Politikası</a
+          >
+          |
+          <a href="/terms" class="text-gray-400 hover:text-white"
+            >Kullanım Şartları</a
+          >
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
