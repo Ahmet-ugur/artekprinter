@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hesabım</title>
+    <link rel="stylesheet" href="hesabım.css">
+</head>
+<body>
+         <!-- Header ve Navbar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Anasayfa</a></li>
+                <li class="dropdown">
+                    <a href="#hizmetler">Hizmetlerimiz</a>
+                    <div class="dropdown-content">
+                        <a href="arac.html" onclick="showHizmet('Araç Parçaları')">Araç Parçaları</a>
+                        <a href="arac.html" onclick="showHizmet('Ev Dekarasyonu')">Ev Dekarasyonu</a>
+                        <a href="arac.html" onclick="showHizmet('Figuran Baskıları')">Figuran Baskıları</a>
+                        <a href="takimbaskiları.html" onclick="showHizmet('Takım Baskıları')">Takım Baskıları</a>
+                        <a href="arac.html" onclick="showHizmet('Film Karakterleri')">Film Karakterleri</a>
+                        <a href="arac.html" onclick="showHizmet('Kişiye Özel Baskı')">Kişiye Özel Baskı</a>
+                        <a href="arac.html" onclick="showHizmet('3D Tarayıcı Baskıları')">3D Tarayıcı Baskıları</a>
+                    </div>
+                </li>
+                <li><a href="kampanya.html">Kampanyalar</a></li>
+                <li><a href="hakkımızda.html">Hakkımızda</a></li>
+                <li><a href="hesabım.html">Hesabım</a></li>
+                <li><a href="sepetim.html" id="sepetLink">Sepetim (0)</a></li>
+                <li><a href="sıkcasorulan.html">SSS</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="app">
+        <!-- Kayıt Ol Bölümü -->
+        <div id="register-section" style="display: none;">
+            <h2>Yeni Üyelik</h2>
+            <form id="register-form">
+                <label for="full-name">Ad Soyad <span class="required">*</span></label>
+                <input type="text" id="full-name" placeholder="Ad Soyad" required>
+                
+                <label for="email-register">E-posta <span class="required">*</span></label>
+                <input type="email" id="email-register" placeholder="E-posta" required>
+                
+                <label for="password-register">Şifre <span class="required">*</span></label>
+                <input type="password" id="password-register" placeholder="Şifre" required>
+                
+                <label for="phone-number">Telefon Numarası (Opsiyonel)</label>
+                <input type="tel" id="phone-number" placeholder="05XXXXXXXXX" pattern="^(05\d{9})$">
+                
+                <button type="submit" class="btn">Kayıt Ol</button>
+            </form>
+            <p>Hesabınız var mı? <a href="#" id="go-to-login">Giriş Yap</a></p>
+        </div>
+
+        <!-- Giriş Yap Bölümü -->
+        <div id="login-section">
+            <h2>Üye Girişi</h2>
+            <form id="login-form">
+                <label for="email-login">E-posta <span class="required">*</span></label>
+                <input type="email" id="email-login" placeholder="E-posta" required>
+                
+                <label for="password-login">Şifre <span class="required">*</span></label>
+                <input type="password" id="password-login" placeholder="Şifre" required>
+                
+                <button type="submit" class="btn">Giriş Yap</button>
+            </form>
+            <p>Hesabınız yok mu? <a href="#" id="go-to-register">Kayıt Ol</a></p>
+        </div>
+
+        <!-- Hesap Ayarları ve Diğer Bölümler -->
+        <div id="account-section" style="display: none;">
+            <h2>Hesabım</h2>
+            <div id="account-settings">
+                <button class="btn" id="account-settings-btn">Hesap Ayarları</button>
+                <div id="account-settings-content" style="display: none;">
+                    <form id="account-form">
+                        <label for="account-name">Ad Soyad</label>
+                        <input type="text" id="account-name" value="Ad Soyad" disabled>
+                        
+                        <label for="account-email">E-posta</label>
+                        <input type="email" id="account-email" value="email@example.com" disabled>
+                        
+                        <label for="account-phone">Telefon Numarası</label>
+                        <input type="tel" id="account-phone" value="05XXXXXXXXX" disabled>
+                        
+                        <label for="account-password">Şifre</label>
+                        <input type="password" id="account-password" value="******" disabled>
+                        
+                        <button type="button" class="btn" id="change-password">Şifreyi Değiştir</button>
+                    </form>
+                </div>
+            </div>
+            
+            <h3>Başka İşlemler</h3>
+            <ul>
+                <li><a href="#" id="view-orders">Siparişlerim</a></li>
+                <li><a href="mailto:artekprinter@gmail.com" id="contact-sellera">Satıcı ile Görüşme</a></li>
+            </ul>
+            <button class="btn" id="logout">Çıkış Yap</button>
+        </div>
+    </div>
+
+    <script src="hesabım.js"></script>
+    <footer >
+        <div class="container mx-auto text-center">
+          <p class="text-sm">&copy; 2025 Artek Printer. Tüm hakları saklıdır.</p>
+          <p class="text-xs mt-2">
+            <a href="/privacy" class="text-gray-400 hover:text-white">Gizlilik Politikası</a> |
+            <a href="/terms" class="text-gray-400 hover:text-white">Kullanım Şartları</a>
+          </p>
+        </div>
+      </footer>
+</body>
+</html>

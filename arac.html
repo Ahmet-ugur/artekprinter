@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="arac.css">
+    <title>Document</title>
+</head>
+<body>
+        <!-- Header ve Navbar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Anasayfa</a></li>
+                <li class="dropdown">
+                    <a href="#hizmetler">Hizmetlerimiz</a>
+                    <div class="dropdown-content">
+                        <a href="arac.html" onclick="showHizmet('Araç Parçaları')">Araç Parçaları</a>
+                        <a href="arac.html" onclick="showHizmet('Ev Dekarasyonu')">Ev Dekarasyonu</a>
+                        <a href="arac.html" onclick="showHizmet('Figuran Baskıları')">Figuran Baskıları</a>
+                        <a href="takimbaskiları.html" onclick="showHizmet('Takım Baskıları')">Takım Baskıları</a>
+                        <a href="arac.html" onclick="showHizmet('Film Karakterleri')">Film Karakterleri</a>
+                        <a href="arac.html" onclick="showHizmet('Kişiye Özel Baskı')">Kişiye Özel Baskı</a>
+                        <a href="arac.html" onclick="showHizmet('3D Tarayıcı Baskıları')">3D Tarayıcı Baskıları</a>
+                    </div>
+                </li>
+                <li><a href="kampanya.html">Kampanyalar</a></li>
+                <li><a href="hakkımızda.html">Hakkımızda</a></li>
+                <li><a href="hesabım.html">Hesabım</a></li>
+                <li><a href="sepetim.html" id="sepetLink">Sepetim (0)</a></li>
+                <li><a href="sıkcasorulan.html">SSS</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <div class="ana">
+            <p>Adı Soyadı</p>
+            <input type="text" placeholder="Adı - Soyadı"> <hr>
+            <p>Telefon Numarası</p>
+            <input type="tel" name="" id="" placeholder="Telefon numarası"> <hr>
+            <p>Mesajınızı Giriniz</p>
+            <input class="mesaj" type="text" name="" id="" placeholder="Mesajınızı buraya yazınız lütfen"> <hr>
+            <p>E-Mail Adresinini Yazınız</p>
+            <input class="mail" type="email" name="" id="" placeholder="E-mail adresinizi buraya yazınız lütfen"><hr>
+            <p>İstenilen Parçanın Fotoğrafını Yükleyiniz</p>
+            <input type="file" name="" id=""> <br> <br>
+            <div class="seçme">
+                <div class="seçme1"><input class="seçme2" type="checkbox" name="Hizmet" id="">Araç Baskısı</div>
+                <div class="seçme1"><input class="seçme2" type="checkbox" name="Hizmet" id="">Ev Dekarasyonu</div>
+                <div class="seçme1"><input class="seçme2" type="checkbox" name="Hizmet" id="">Figuran Baskısı</div>
+                <div class="seçme1"><input class="seçme2" type="checkbox" name="Hizmet" id="">Takım Baskısı</div>
+                <div class="seçme1"><input class="seçme2" type="checkbox" name="Hizmet" id="">Film Karakteri</div>
+                <div class="seçme1"><input class="seçme2" type="checkbox" name="Hizmet" id="">Kişiye Özel Baskı</div>
+                <div class="seçme1"><input class="seçme2" type="checkbox" name="Hizmet" id="">3D Tarayıcı Baskıları</div>
+               
+               
+                
+                
+               
+                
+               </div>
+             
+            <button class="gönder">Gönder</button>
+          
+           
+        </div>
+    </section>
+    <footer >
+        <div class="container mx-auto text-center">
+          <p class="text-sm">&copy; 2025 Artek Printer. Tüm hakları saklıdır.</p>
+          <p class="text-xs mt-2">
+            <a href="/privacy" class="text-gray-400 hover:text-white">Gizlilik Politikası</a> |
+            <a href="/terms" class="text-gray-400 hover:text-white">Kullanım Şartları</a>
+          </p>
+        </div>
+      </footer>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sepetim</title>
+    <link rel="stylesheet" href="sepetim.css">
+</head>
+<body>
+    <!-- Header ve Navbar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Anasayfa</a></li>
+                <li class="dropdown">
+                    <a href="#hizmetler">Hizmetlerimiz</a>
+                    <div class="dropdown-content">
+                        <a href="arac.html" onclick="showHizmet('Araç Parçaları')">Araç Parçaları</a>
+                        <a href="arac.html" onclick="showHizmet('Ev Dekarasyonu')">Ev Dekarasyonu</a>
+                        <a href="arac.html" onclick="showHizmet('Figuran Baskıları')">Figuran Baskıları</a>
+                        <a href="takimbaskiları.html" onclick="showHizmet('Takım Baskıları')">Takım Baskıları</a>
+                        <a href="arac.html" onclick="showHizmet('Film Karakterleri')">Film Karakterleri</a>
+                        <a href="arac.html" onclick="showHizmet('Kişiye Özel Baskı')">Kişiye Özel Baskı</a>
+                        <a href="arac.html" onclick="showHizmet('3D Tarayıcı Baskıları')">3D Tarayıcı Baskıları</a>
+                    </div>
+                </li>
+                <li><a href="kampanya.html">Kampanyalar</a></li>
+                <li><a href="hakkımızda.html">Hakkımızda</a></li>
+                <li><a href="hesabım.html">Hesabım</a></li>
+                <li><a href="sepetim.html" id="sepetLink">Sepetim (0)</a></li>
+                <li><a href="sıkcasorulan.html">SSS</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Sepetim</h1>
+        <div class="cart-items" id="cart-items">
+            <!-- Sepet öğeleri burada gösterilecek -->
+        </div>
+        <div class="total">
+            <p>Toplam Tutar: <span id="total">0 TL</span></p>
+        </div>
+        <button class="checkout-btn" id="checkout-btn">Ödeme Yap</button>
+    </div>
+    <footer >
+        <div class="container mx-auto text-center">
+          <p class="text-sm">&copy; 2025 Artek Printer. Tüm hakları saklıdır.</p>
+          <p class="text-xs mt-2">
+            <a href="/privacy" class="text-gray-400 hover:text-white">Gizlilik Politikası</a> |
+            <a href="/terms" class="text-gray-400 hover:text-white">Kullanım Şartları</a>
+          </p>
+        </div>
+      </footer>
+    <script src="sepetim.js"></script>
+</body>
+</html>

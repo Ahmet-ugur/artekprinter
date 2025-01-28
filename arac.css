@@ -1,0 +1,133 @@
+body{
+    background-color: #1abc9c;
+}
+/* Header ve Navbar */
+header {
+    background-color: #1abc9c;
+    padding: 20px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 25px;
+    position: relative;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    background-color: #16a085;
+    border-radius: 5px;
+}
+
+/* Dropdown Menu */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+section{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ana{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border: 1px solid white;
+    max-width: 400px;
+    max-height: 900px;
+    padding: 50px;
+}
+p{
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+input{
+    width: 200px;
+    padding: 10px;
+    height: 10px;
+    text-align: center;
+}
+.mesaj{
+    text-align: start;
+    width: 300px;
+    height: 100px;
+}
+button{
+    max-width: 250px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+}
+.seçme{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 350px;
+    
+}
+.seçme2{
+  
+    width: 10px;
+}
+/*Footer*/
+footer {
+    margin: auto;
+    background-color: #1f2937; /* Dark Gray */
+    color: #ffffff; /* White */
+    padding: 1rem 0;
+    text-align: center;
+  }
+  footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  footer p {
+    margin: 0.5rem 0;
+    font-size: 0.875rem; /* Small text */
+  }
+  footer a {
+    color: #9ca3af; /* Gray */
+    text-decoration: none;
+    margin: 0 0.5rem;
+    transition: color 0.3s ease;
+  }
+  footer a:hover {
+    color: #ffffff; /* White on hover */
+  }
